@@ -1,0 +1,86 @@
+@import "variables";
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  color: $font-color;
+  margin: 0;
+  background-color: $app-background-color;
+}
+
+.app {
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  .app__container {
+    padding: 25px 15px;
+  }
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+  background: rgba($gray, 0.8);
+  box-sizing: border-box;
+
+  .modal__container {
+    position: relative;
+    background: $white;
+    overflow-y: auto;
+    max-height: 75vh;
+    width: 100%;
+    padding: 50px 25px 25px;
+
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 25px;
+      font-size: 25px;
+    }
+  }
+}
+
+a {
+  color: $font-color;
+}
+
+@media only screen and (min-width: 768px) {
+  .app {
+    .app__container {
+      padding: 40px;
+    }
+  }
+
+  .modal {
+    .modal__container {
+      max-height: initial;
+      padding: 60px 50px 30px 50px;
+      width: 520px;
+      border-radius: $border-radius;
+
+      .modal-close {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .app {
+    .app__container {
+      padding: 60px 60px 40px 60px;
+    }
+  }
+}
+
+@import "card.details";
+@import "cards.list";
+@import "cards.recommended";
+@import "loader";

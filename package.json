@@ -1,0 +1,49 @@
+{
+  "name": "poke-cards",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node_modules/.bin/webpack-dev-server --hot --config webpack.config.js --mode development"
+  },
+  "author": "Daria Oldenburg",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "history": "^4.7.2",
+    "lodash.get": "^4.4.2",
+    "lodash.shuffle": "^4.2.0",
+    "lodash.uniqby": "^4.7.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-infinite-scroller": "^1.2.0",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.0",
+    "redux-multi": "^0.1.12",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^9.0.0",
+    "babel-loader": "^8.0.0",
+    "babel-plugin-transform-function-bind": "^6.22.0",
+    "babel-polyfill": "^6.26.0",
+    "css-loader": "^1.0.0",
+    "eslint": "^5.4.0",
+    "eslint-loader": "^2.1.0",
+    "eslint-plugin-react": "^7.11.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.9.3",
+    "path": "^0.12.7",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.6"
+  }
+}
